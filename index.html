@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>North Reforged Saison 1 — Notes de mise à jour</title>
+<title>North Reforged — Notes de mise à jour</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Anton&display=swap" rel="stylesheet">
@@ -225,31 +225,17 @@
   /* ---------- Image placeholder ---------- */
   .img-placeholder{
     width:100%;
+    aspect-ratio:16/9;
     border:1px solid var(--line);
     background-image: var(--img, none), repeating-linear-gradient(45deg, var(--panel), var(--panel) 10px, var(--line) 10px, var(--line) 11px);
     background-size:cover;
     background-position:center;
-    display:flex; align-items:center; justify-content:center;
-    color:var(--ink-dim);
-    font-size:12px; font-weight:600;
-    text-align:center;
-  }
-  .img-placeholder span{
-    background:var(--panel);
-    border:1px solid var(--line);
-    padding:6px 14px;
   }
   .img-placeholder.hero-img{
-    height:280px;
     margin-bottom:32px;
   }
   .img-placeholder.section-img{
-    height:170px;
     margin-bottom:28px;
-  }
-  @media (max-width:900px){
-    .img-placeholder.hero-img{ height:180px; }
-    .img-placeholder.section-img{ height:130px; }
   }
 
   /* ---------- Mobile ---------- */
@@ -283,7 +269,7 @@
 
 <header class="hero">
   <div class="hero-inner">
-    <div class="img-placeholder hero-img" style="--img:url('header.jpg')"><span>header.jpg</span></div>
+    <div class="img-placeholder hero-img" style="--img:url('header.jpg')"></div>
     <div class="hero-eyebrow">Notes de mise à jour</div>
     <h1 class="display">North Reforged</h1>
     <p>Une nouvelle ère commence sur l'île. Après les événements de Lotus Synapse, North revient sous une forme totalement différente — et quelque chose ne tourne pas rond.</p>
@@ -314,7 +300,7 @@
   <main class="content">
 
     <section class="block" id="map">
-      <div class="img-placeholder section-img" style="--img:url('map.jpg')"><span>map.jpg</span></div>
+      <div class="img-placeholder section-img" style="--img:url('map.jpg')"></div>
       <span class="block-label label-map">NOUVELLE ÎLE</span>
       <h2>Une carte entièrement reforgée</h2>
       <p>North Reforged vous ramène sur une version remixée de la carte de <strong>Summer Splash</strong>, l'île qui précédait les événements de Lotus Synapse. Mais ne vous attendez pas à retrouver l'ancienne carte : elle a été profondément remodelée.</p>
@@ -328,7 +314,7 @@
     </section>
 
     <section class="block" id="loot">
-      <div class="img-placeholder section-img" style="--img:url('loot.jpg')"><span>loot.jpg</span></div>
+      <div class="img-placeholder section-img" style="--img:url('loot.jpg')"></div>
       <span class="block-label label-loot">LOOTPOOL</span>
       <h2>Un lootpool unique</h2>
       <p>North Reforged ne suivra pas nécessairement le lootpool du Battle Royale classique de Fortnite. Le gameplay possède désormais son propre arsenal, conçu spécialement pour North. Chaque saison pourra donc proposer une expérience différente.</p>
@@ -347,7 +333,7 @@
     </section>
 
     <section class="block" id="arsenal">
-      <div class="img-placeholder section-img" style="--img:url('arsenal.jpg')"><span>arsenal.jpg</span></div>
+      <div class="img-placeholder section-img" style="--img:url('arsenal.jpg')"></div>
       <span class="block-label label-loot">ARSENAL</span>
       <h2>L'arsenal de North Reforged</h2>
       <p>Voici les armes et objets actuellement disponibles sur l'île.</p>
@@ -400,7 +386,7 @@
     </section>
 
     <section class="block" id="protectors">
-      <div class="img-placeholder section-img" style="--img:url('protectors.jpg')"><span>protectors.jpg</span></div>
+      <div class="img-placeholder section-img" style="--img:url('protectors.jpg')"></div>
       <span class="block-label label-npc">PNJ</span>
       <h2>Dites bonjour aux Protecteurs</h2>
       <p>L'île n'est plus abandonnée. Les <strong>Protecteurs</strong> sont désormais répartis à travers North. Leur mission est simple : protéger l'île. Mais tous les Protecteurs ne jouent pas le même rôle — chacun possède son propre service et pourra proposer différentes interactions au cours de la saison.</p>
@@ -418,7 +404,7 @@
     </section>
 
     <section class="block" id="boss">
-      <div class="img-placeholder section-img" style="--img:url('boss.jpg')"><span>boss.jpg</span></div>
+      <div class="img-placeholder section-img" style="--img:url('boss.jpg')"></div>
       <span class="block-label label-boss">MENACES</span>
       <h2>Les Boss</h2>
       <p>Les Protecteurs ne sont pas les seuls à avoir pris position. Plusieurs <strong>boss hostiles</strong> contrôlent désormais certaines zones de l'île. Ces ennemis sont plus puissants que les adversaires classiques et disposent de leur propre zone de contrôle.</p>
@@ -431,7 +417,7 @@
     </section>
 
     <section class="block" id="anomalies">
-      <div class="img-placeholder section-img" style="--img:url('anomalies.jpg')"><span>anomalies.jpg</span></div>
+      <div class="img-placeholder section-img" style="--img:url('anomalies.jpg')"></div>
       <span class="block-label label-anomaly">PHÉNOMÈNE</span>
       <h2>Les Anomalies</h2>
       <p>Les anomalies constituent l'un des principaux éléments de North Reforged. Elles ne seront pas forcément présentes dès le début — elles apparaîtront progressivement au cours de la saison, modifiant une partie de l'île, transformant certains lieux ou provoquant des changements inattendus dans le gameplay.</p>
@@ -449,7 +435,7 @@
     </section>
 
     <section class="block" id="anomalithes">
-      <div class="img-placeholder section-img" style="--img:url('anomalithes.jpg')"><span>anomalithes.jpg</span></div>
+      <div class="img-placeholder section-img" style="--img:url('anomalithes.jpg')"></div>
       <span class="block-label label-eco">ÉCONOMIE</span>
       <h2>Les Anomalithes</h2>
       <p>Les <strong>Anomalithes</strong> font leur apparition sur North. Cette nouvelle ressource permet aux joueurs d'accéder à différents contenus exclusifs, et peut notamment être trouvée dans les coffres présents sur l'île.</p>
@@ -468,7 +454,7 @@
     </section>
 
     <section class="block" id="evolution">
-      <div class="img-placeholder section-img" style="--img:url('evolution.jpg')"><span>evolution.jpg</span></div>
+      <div class="img-placeholder section-img" style="--img:url('evolution.jpg')"></div>
       <span class="block-label label-map">SAISON</span>
       <h2>Une saison qui évolue</h2>
       <p>North Reforged n'est pas une expérience figée. La carte, le lootpool, les Protecteurs, les boss et les anomalies sont tous capables d'évoluer au fil du temps.</p>
